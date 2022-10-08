@@ -1,0 +1,9 @@
+<h1>Task List </h1>
+
+<h2>Task List <%= @task.title %> </h2>
+
+<h2>Description</h2>
+
+<p> <%= @task.details %></p>
+
+<%= link_to "Delete the task", task_path(@task), method: :delete, data: {confirm: 'Confirm you want to delete the task?'} %>
